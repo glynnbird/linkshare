@@ -99,6 +99,7 @@ var kickOffReplication = function() {
       retry:true
     }).on('change', function(change){ 
       console.log("change", change);
+      loadLinks();
     });
   }
 }
