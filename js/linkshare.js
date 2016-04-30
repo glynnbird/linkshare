@@ -60,7 +60,7 @@ var loadLinks = function() {
       html += '<td><a class="truncate" href="' + doc.url + '" title="' + doc.url + '" target="_new">' + doc.title + '</a><br />'
       html += '<span class="domain">' + extractDomain(doc.url) + '</span>';
       html += '</td>';
-      html += '<td><button class="delete error" data-id="' + doc._id +'" data-rev="' + doc._rev + '">x</button></td>'
+      html += '<td><button class="pseudo" data-id="' + doc._id +'" data-rev="' + doc._rev + '"><img src="remove.png" class="removeicon"/></button></td>'
       html += '</tr>';
     }
     html += '</tbody>';
